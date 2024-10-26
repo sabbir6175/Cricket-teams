@@ -11,16 +11,10 @@ const Cricket = ({handleClickAllPlayers}) => {
                 .then(data => setPlayersData(data))
         },[])
     return (
-        <div className=" container mx-auto pt-5  px-1">
+        <div className=" container mx-auto pt-5  px-1 pb-60 z-50">
             {/* 2 button  */}
-            <div className="flex flex-col gap-3 md:flex-row justify-between items-center my-5  sticky top-28 z-50 backdrop:blur-sm ">
-                <div>
-                    <h1 className="text-2xl font-bold">Available Players</h1>
-                </div>
-                <div className="border-2 rounded-lg ">
-                    <button className="px-5 py-2  border-none hover:bg-[#E7FE29] text-base font-bold ">Available</button>
-                    <button className="px-5 py-2  text-base hover:bg-[#E7FE29] font-bold ">Selected <span>(0)</span></button>
-                </div>
+            <div>
+                <h1 className="text-2xl font-bold my-5">Available Players</h1>
             </div>
             {/* batsman section */}
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -61,27 +55,14 @@ const Cricket = ({handleClickAllPlayers}) => {
                 }
                
             </section>
-            <section className=" p-5 border-2 border-white bg-transparent backdrop-blur-md rounded-2xl -mb-[200px] mt-20">
-                <div className="relative overflow-hidden border-[2px] border-white rounded-[14px] ">
-                    <img className="w-full h-[300px]  overflow-hidden rounded-xl bg-gray-100 " src="https://i.ibb.co.com/k11RYNk/bg-shadow.png" alt="" />
-                    <div className="absolute overflow-hidden top-0 left-0 right-0 bottom-0 max-w-screen-sm lg:max-w-screen-lg mx-auto py-6 md:py-10  text-center place-content-center">
-                        <h1 className=" text-xl md:text-3xl lg:text-4xl font-bold md:mt-5">Subscribe to our Newsletter</h1>
-                        <p className=" text-base md:text-xl font-medium mt-2 md:my-4 Inter-font">Get the latest updates and news right in your inbox!</p>
-                        
-                        <div className="join my-3 place-content-center">
-                            <input type="text" placeholder="Enter your email" className="input w-3/6  lg:w-full text-black input-bordered join-item" required />
-                            <button className="btn text-black font-bold join-item bg-gradient-to-r from-orange-200 via-orange-300 to-red-400">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
+           
         </div>
     
     );
 };
 Cricket.propTypes = {
-    handleClickAllPlayers:PropTypes.func
+    handleClickAllPlayers:PropTypes.func,
+   
 };
 
 export default Cricket;

@@ -3,7 +3,7 @@ import '../../../src/main'
 import PropTypes from 'prop-types';
 import Cricket from './Cricket';
 import Selected from './selected';
-const Button = ({ handleToggleButton, isActive, handleClickAllPlayers , selected ,handleAddToMore , handleDelete }) => {
+const Button = ({ handleToggleButton, isActive, handleClickAllPlayers , selected ,handleAddMoreBtn , handleDelete }) => {
   console.log(typeof selected)
     return (
        <section className='container mx-auto'>
@@ -15,7 +15,7 @@ const Button = ({ handleToggleButton, isActive, handleClickAllPlayers , selected
                         <button onClick={()=>handleToggleButton("Selected")}  className={`px-5 py-3 text-base  font-bold ${isActive.cart ? 'unActive' : 'active'}`}>Selected({selected.length})</button>
                     </div>
                  </div>
-                {isActive.cart ? <Cricket  handleClickAllPlayers={handleClickAllPlayers}></Cricket> : <Selected selected={selected} handleDelete={handleDelete} handleAddToMore={handleAddToMore} ></Selected> }
+                {isActive.cart ? <Cricket  handleClickAllPlayers={handleClickAllPlayers}></Cricket> : <Selected selected={selected} handleDelete={handleDelete} handleAddMoreBtn={handleAddMoreBtn} ></Selected> }
              </div>
        </section>
     );
@@ -24,7 +24,7 @@ Button.propTypes = {
     handleToggleButton:PropTypes.func,
     isActive:PropTypes.object,
     handleClickAllPlayers:PropTypes.func,
-    handleAddToMore:PropTypes.func,
+    handleAddMoreBtn:PropTypes.func,
     handleDelete:PropTypes.func,
     selected:PropTypes.object.isRequired
    

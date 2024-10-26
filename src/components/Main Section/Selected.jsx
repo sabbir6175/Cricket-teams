@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Selected = ({selected, handleDelete, handleAddToMore}) => {
-    console.log(typeof selected)
+const Selected = ({selected, handleDelete, handleAddMoreBtn}) => {
+    // console.log(typeof selected)
     return (
         <div className='px-3 mb-60'>
             <h1 className="text-[28px] font-bold text-[#131313] mb-5">Selected Players({selected.length}/6) </h1>
@@ -27,7 +27,7 @@ const Selected = ({selected, handleDelete, handleAddToMore}) => {
             </div>
 
             <div className='border-2 bg-black rounded-xl w-[200px] flex justify-center p-1'>
-                <button onClick={()=>handleAddToMore('Available')} className='w-[184px] h-[48px] bg-[#E7FE29] rounded-xl text-[#131313] text-[18px] m-1'>Add More Player</button>
+                <button onClick={()=>handleAddMoreBtn('Available')} className='w-[184px] h-[48px] bg-[#E7FE29] rounded-xl text-[#131313] text-[18px] m-1'>Add More Player</button>
             </div>
         </div>
     
@@ -37,7 +37,7 @@ Selected.propTypes = {
    
     selected:PropTypes.object,
     handleDelete:PropTypes.func,
-    handleAddToMore:PropTypes.func
+    handleAddMoreBtn:PropTypes.func
    
 };
 

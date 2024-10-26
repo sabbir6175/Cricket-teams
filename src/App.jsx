@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import Footer from './components/Footer Section/Footer'
-import Header from './components/Headers/Header'
+import Header from './components/Headers/Navbar'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from './components/Main Section/Button';
@@ -98,7 +98,7 @@ const handleClickAllPlayers = (player) => {
   )
   }
   //add more button 
-  const handleAddToMore =(status) => {
+  const handleAddMoreBtn =(status) => {
     if(status === "Available"){
       setIsActive(
         {
@@ -119,17 +119,17 @@ const handleClickAllPlayers = (player) => {
   
   return (
     <>
-     <div className='container mx-auto '>
+   
           <Header coins={coins} ></Header>
           <Banner handleClickCoin ={handleClickCoin}></Banner>
-      </div>
+     
             <Button 
               isActive={isActive} 
               handleToggleButton={handleToggleButton} 
               handleClickAllPlayers={handleClickAllPlayers}
               selected ={selected}
               handleDelete={handleDelete}
-              handleAddToMore={handleAddToMore}
+              handleAddMoreBtn={handleAddMoreBtn}
             ></Button>
         
               {/* footer section er footer component */}

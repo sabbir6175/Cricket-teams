@@ -43,18 +43,6 @@ function App() {
       }
     }
   // console.log(isActive)
-
-
-  // {
-  //   "players_id": 6,
-  //   "players_name": "MS Dhoni",
-  //   "country": "India",
-  //   "players_image": "https://i.ibb.co.com/Lxs1xVm/MS-Dhoni.jpg",
-  //   "role": "Batsman",
-  //   "batting_type": "Right-Hand-Bat",
-  //   "bidding_price": 1450000
-  // },
-
 // choose players function
 const handleClickAllPlayers = (player) => {
   const isExist = selected.find(prevSelect => prevSelect.players_id === player.players_id );
@@ -135,19 +123,18 @@ const handleClickAllPlayers = (player) => {
           <Header coins={coins} ></Header>
           <Banner handleClickCoin ={handleClickCoin}></Banner>
       </div>
-          <div>
-              <Button 
+            <Button 
               isActive={isActive} 
               handleToggleButton={handleToggleButton} 
               handleClickAllPlayers={handleClickAllPlayers}
               selected ={selected}
               handleDelete={handleDelete}
               handleAddToMore={handleAddToMore}
-              ></Button>
+            ></Button>
         
               {/* footer section er footer component */}
               <Footer></Footer>
-          </div>
+       
        
       <ToastContainer />
     </>

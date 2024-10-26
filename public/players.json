@@ -1,0 +1,93 @@
+[
+    {
+      "players_id": 1,
+      "players_name": "Virat Kohli",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/ypqsTKV/Virat-Kohli.jpg",
+      "role": "Batsman",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 1500000
+    },
+    {
+      "players_id": 2,
+      "players_name": "Rohit Sharma",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/T2n8m83/Rohit_Sharma.jpg",
+      "role": "Batsman",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 1200000
+    },
+    {
+      "players_id": 3,
+      "players_name": "Jasprit Bumrah",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/8N5GK18/download-8.jpg",
+      "role": "Bowler",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 1300000
+    },
+    {
+      "players_id": 4,
+      "players_name": "KL Rahul",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/p1THSbc/KL-Rahul.jpg",
+      "role": "Batsman",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 1100000
+    },
+    {
+      "players_id": 5,
+      "players_name": "Ravindra Jadeja",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/J28HkHt/Shikhar-Dhawan.jpg",
+      "role": "All-Rounder",
+      "batting_type": "Left-hand bat",
+      "bidding_price": 1150000
+    },
+    {
+      "players_id": 6,
+      "players_name": "MS Dhoni",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/Lxs1xVm/MS-Dhoni.jpg",
+      "role": "Batsman",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 1450000
+    },
+    {
+      "players_id": 7,
+      "players_name": "Hardik Pandya",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/T2n8m83/Hardik-Pandya.jpg",
+      "role": "All-Rounder",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 1100000
+    },
+    {
+      "players_id": 8,
+      "players_name": "Shikhar Dhawan",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/J28HkHt/Shikhar-Dhawan.jpg",
+      "role": "Batsman",
+      "batting_type": "Left-hand bat",
+      "bidding_price": 950000
+    },
+    {
+      "players_id": 9,
+      "players_name": "Ajinkya Rahane",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/zS3CXpM/Ajinkya-Rahane.jpg",
+      "role": "Batsman",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 900000
+    },
+    {
+      "players_id": 10,
+      "players_name": "Prithvi Shaw",
+      "country": "India",
+      "players_image": "https://i.ibb.co.com/Q6G7Wt8/Jasprit-Bumrah.jpg",
+      "role": "Batsman",
+      "batting_type": "Right-Hand-Bat",
+      "bidding_price": 850000
+    }
+  ]
+  
